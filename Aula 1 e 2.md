@@ -16,20 +16,16 @@ Nesta aula você aprenderá a:
 
 # Fluxo de Trabalho para Carregar os Dados
 
-1. Faça o download da planilha no Google Drive.
+1. Faça o download da planilha
    > **Importante:** confirme em qual pasta o arquivo foi salvo.
 
-2. Abra a planilha no **Excel**.
+3. Abra o **Power BI Desktop**.
 
-3. Insira as novas informações.
+4. Crie um **Relatório em Branco**.
 
-4. Abra o **Power BI Desktop**.
+5. Clique em **Obter Dados**.
 
-5. Crie um **Relatório em Branco**.
-
-6. Clique em **Obter Dados**.
-
-7. Escolha a fonte de dados desejada.
+6. Escolha a fonte de dados desejada.
 
    Exemplos:
 
@@ -39,11 +35,11 @@ Nesta aula você aprenderá a:
    - Azure
    - Entre outras
 
-8. Localize o arquivo.
+7. Localize o arquivo.
 
-9. Selecione as planilhas que deseja importar.
+8. Selecione as planilhas que deseja importar.
 
-10. Escolha uma das opções:
+9. Escolha uma das opções:
 
 - **Carregar Dados**
   - Utilize quando os dados estiverem organizados corretamente.
@@ -73,16 +69,37 @@ Antes de construir qualquer gráfico, faça uma pergunta.
 
 **Visualização**
 
-Gráfico de Colunas Clusterizado
+Gráfico de Pizza
 
 | Campo | Valor |
 |--------|-------|
-| Eixo X | Meios de Transporte |
-| Eixo Y | Contagem de Meios de Transporte |
+| Legenda | Trasnporte |
+| Valores | Contagem de Transporte|
 
 ---
 
 ## Exercício 2
+
+### Pergunta
+
+**Em qual bairro há mais alunos?**
+
+**Variável**
+
+- Bairro
+
+**Visualização**
+
+Gráfico de Colunas Clusterizado
+
+| Campo | Valor |
+|--------|-------|
+| Eixo X | Bairro |
+| Eixo Y | Contagem |
+
+---
+
+## Exercício 3
 
 ### Pergunta
 
@@ -94,32 +111,12 @@ Gráfico de Colunas Clusterizado
 
 **Visualização**
 
-Gráfico de Pizza
+Gráfico de Barras Clusterizado
 
 | Campo | Valor |
 |--------|-------|
-| Legenda | Nível de Excel |
-| Valores | Contagem do Nível de Excel |
-
----
-
-## Exercício 3
-
-### Pergunta
-
-**Quantas xícaras de café os alunos tomam por dia (no total)?**
-
-**Variável**
-
-- Cafés por Dia
-
-**Visualização**
-
-Indicador (Card)
-
-| Campo | Valor |
-|--------|-------|
-| Valores | Soma de Cafés por Dia |
+| Eixo X | Contagem Nível Excel |
+| Eixo Y | Nível Excel |
 
 ---
 
@@ -127,20 +124,22 @@ Indicador (Card)
 
 ### Pergunta
 
-**Em qual bairro há mais alunos?**
+**Quantas horas de sono os alunos dormem (no total)?**
 
 **Variável**
 
-- Bairro de Residência
+- Horas de Sono
 
 **Visualização**
 
-Gráfico de Colunas Clusterizado
+Indicador (Card)
 
 | Campo | Valor |
 |--------|-------|
-| Eixo X | Bairro |
-| Eixo Y | Contagem |
+| Valores | Soma de Horas de Sono |
+
+---
+
 
 ---
 
@@ -187,7 +186,7 @@ Média:
 
 ### Pergunta
 
-**Em média, quantas xícaras de café os alunos tomam por dia?**
+**Em média, quantas horas de sono os alunos tem por dia?**
 
 **Visualização**
 
@@ -195,7 +194,7 @@ Cartão
 
 | Campo | Valor |
 |--------|-------|
-| Valores | Média de Cafés por Dia |
+| Valores | Média de Hr de Sono |
 
 ---
 
@@ -260,7 +259,7 @@ Nesses casos, a **mediana representa melhor a realidade**.
 
 ### Pergunta
 
-**Qual é a mediana do consumo de café dos alunos?**
+**Qual é a mediana do horas de sono dos alunos?**
 
 **Visualização**
 
@@ -272,7 +271,7 @@ Indicador
 | Valor mínimo | Mínimo |
 | Valor máximo | Máximo |
 
-> Utilize sempre a variável **Cafés por Dia**, alterando apenas o tipo de agregação.
+> Utilize sempre a variável **Horas de Sono**, alterando apenas o tipo de agregação.
 
 ---
 
@@ -280,12 +279,12 @@ Indicador
 
 ### Pergunta
 
-**Os moradores de quais bairros dormem mais, em média?**
+**Os moradores de quais bairros tem mais horas de tela, em média?**
 
 **Variáveis**
 
 - Bairro de Residência
-- Horas de Sono
+- Horas de Tela
 
 **Visualização**
 
@@ -294,7 +293,7 @@ Gráfico de Barras
 | Campo | Valor |
 |--------|-------|
 | Categoria | Bairro |
-| Valores | Média de Horas de Sono |
+| Valores | Média de Horas de Tela|
 
 ---
 
@@ -302,12 +301,12 @@ Gráfico de Barras
 
 ### Pergunta
 
-**Qual é a idade média dos estudantes e dos empregados?**
+**Qual é a idade média dos estudantes de cada bairro?**
 
 **Variáveis**
 
 - Idade
-- Situação Profissional
+- Bairro
 
 **Visualização**
 
@@ -315,7 +314,7 @@ Gráfico de Funil
 
 | Campo | Valor |
 |--------|-------|
-| Categoria | Situação Profissional |
+| Categoria | Bairro |
 | Valores | Média da Idade |
 
 ---
@@ -324,11 +323,11 @@ Gráfico de Funil
 
 ### Pergunta
 
-**Qual nível de Excel consome mais café, em média?**
+**Qual nível de Excel tem mais horas de tela, em média?**
 
 **Variáveis**
 
-- Cafés por Dia
+- Horas de Tela
 - Nível de Excel
 
 **Visualização**
@@ -338,29 +337,7 @@ Gráfico de Colunas
 | Campo | Valor |
 |--------|-------|
 | Categoria | Nível de Excel |
-| Valores | Média de Cafés por Dia |
-
----
-
-## Exercício 10
-
-### Pergunta
-
-**Qual situação profissional possui maior tempo médio de tela?**
-
-**Variáveis**
-
-- Tempo de Tela
-- Situação Profissional
-
-**Visualização**
-
-Gráfico de Área Empilhada
-
-| Campo | Valor |
-|--------|-------|
-| Categoria | Situação Profissional |
-| Valores | Média de Horas de Tela |
+| Valores | Média de Horas de Tela|
 
 ---
 
