@@ -11,7 +11,7 @@ Nesta aula você aprenderá a:
 - Compreender formas de resumir dados
 - Entender as medidas de tendência central (média e mediana)
 
-[TPara baixar a planilha clique aqui](https://docs.google.com/spreadsheets/d/12KZ2YzJKPyHNQGTZIFBWUicfTwVtZF5d/export?format=xlsx)
+[Para baixar a planilha clique aqui](https://docs.google.com/spreadsheets/d/12KZ2YzJKPyHNQGTZIFBWUicfTwVtZF5d/export?format=xlsx)
 ---
 
 # Fluxo de Trabalho para Carregar os Dados
