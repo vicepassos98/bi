@@ -313,20 +313,6 @@ Gráfico de Barras
 Gráfico de Linhas
 
 ---
-
-## Exercício 9
-
-**Qual mês apresentou o maior faturamento?**
-
-**Variáveis**
-
-- Data da Venda
-- Faturamento
-
-**Visualização**
-
-Gráfico de Linhas
-
 # Resumo
 
 Nesta aula aprendemos a:
