@@ -259,7 +259,7 @@ Faturamento = SUM(VENDAS[Valor de Venda])
 ```
 
 ## Unidades Vendidas
-É qauntidade de intes vendidos pela empresa durante o período. Portanto será a soma de toda coluna "Quantidade"
+É qauntidade de itenss vendidos pela empresa durante o período. Portanto será a soma de toda coluna "Quantidade"
 
 ```DAX
 Unidades Vendidas = SUM(VENDAS[Unidades Vendidas])
