@@ -278,19 +278,20 @@ Unidades Vendidas = SUM(VENDAS[Unidades Vendidas])
 
 **Qual estado contribuiu mais para o faturamento?**
 
+**Visualização**
+
+Gráfico de Rosca
+
 **Variáveis**
 
 - Estado
 - Faturamento
 
-**Visualização**
-
-Gráfico de Rosca
 
 | Campo | Valor |
 |--------|-------|
 | Legenda | Estado |
-| Valores | Soma do Faturamento |
+| Valores | Faturamento |
 
 ---
 
