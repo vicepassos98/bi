@@ -282,17 +282,6 @@ Unidades Vendidas = SUM(VENDAS[Unidades Vendidas])
 
 Gráfico de Rosca
 
-**Variáveis**
-
-- Estado
-- Faturamento
-
-
-| Campo | Valor |
-|--------|-------|
-| Legenda | Estado |
-| Valores | Faturamento |
-
 ---
 
 ## Exercício 7
@@ -309,16 +298,10 @@ Gráfico de Rosca
 
 Matriz
 
-| Campo | Valor |
-|--------|-------|
-| Linhas | Produto |
-| Valores | Quantidade, Faturamento e Preço |
-
 ---
 
 ## Exercício 8
 
-### Pergunta
 
 **Qual mês apresentou o maior faturamento?**
 
@@ -330,13 +313,6 @@ Matriz
 **Visualização**
 
 Gráfico de Linhas
-
-| Campo | Valor |
-|--------|-------|
-| Eixo X | Data da Venda (Mês) |
-| Eixo Y | Soma do Faturamento |
-
----
 
 # Resumo
 
