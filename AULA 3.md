@@ -16,9 +16,7 @@ Ao final desta aula você será capaz de:
 
 # Base de Dados
 
-📥 **Download da base de dados**
-
-> [**Download Banco de dados**](https://docs.google.com/spreadsheets/d/1AOWsEqLRNwyLM7VYisOXmkBnp3p_eImW/export?format=xlsx)
+📥 [**Download da base de dados**](https://docs.google.com/spreadsheets/d/1AOWsEqLRNwyLM7VYisOXmkBnp3p_eImW/export?format=xlsx)
 ---
 
 # Fluxo de Trabalho
@@ -173,7 +171,6 @@ Utilizando gráficos e visualizações do Power BI, responda às perguntas abaix
 
 ## Exercício 1
 
-### Pergunta
 
 **Qual mês apresentou o maior lucro? E qual apresentou o menor?**
 
@@ -181,16 +178,9 @@ Utilizando gráficos e visualizações do Power BI, responda às perguntas abaix
 
 Gráfico de Linhas
 
-| Campo | Valor |
-|--------|-------|
-| Eixo X | Mês |
-| Eixo Y | Soma do Lucro |
-
 ---
 
 ## Exercício 2
-
-### Pergunta
 
 **Quais clientes geraram mais lucro para a empresa?**
 
@@ -201,16 +191,9 @@ Gráfico de Linhas
 
 Gráfico de Colunas
 
-| Campo | Valor |
-|--------|-------|
-| Categoria | Faixa de Renda |
-| Valores | Soma do Lucro |
-
 ---
 
 ## Exercício 3
-
-### Pergunta
 
 **Qual foi o faturamento total do período?**
 
@@ -218,15 +201,9 @@ Gráfico de Colunas
 
 Cartão (Card)
 
-| Campo | Valor |
-|--------|-------|
-| Valores | Soma do Faturamento |
-
 ---
 
 ## Exercício 4
-
-### Pergunta
 
 **Quais foram os três produtos com maior quantidade de unidades vendidas?**
 
@@ -234,16 +211,9 @@ Cartão (Card)
 
 Gráfico de Barras
 
-| Campo | Valor |
-|--------|-------|
-| Categoria | Produto |
-| Valores | Soma das Quantidades |
-
 ---
 
 ## Exercício 5
-
-### Pergunta
 
 **Qual marca de tênis gerou o maior lucro?**
 
@@ -251,16 +221,9 @@ Gráfico de Barras
 
 Gráfico de Rosca ou Barras
 
-| Campo | Valor |
-|--------|-------|
-| Categoria | Marca |
-| Valores | Soma do Lucro |
-
 ---
 
 ## Exercício 6
-
-### Pergunta
 
 **Qual mês apresentou o pior faturamento?**
 
@@ -274,27 +237,15 @@ Após identificar o resultado, responda:
 
 Gráfico de Linhas
 
-| Campo | Valor |
-|--------|-------|
-| Eixo X | Mês |
-| Eixo Y | Soma do Faturamento |
-
 ---
 
 ## Exercício 7
-
-### Pergunta
 
 **Qual faixa etária comprou a maior quantidade de unidades de tênis?**
 
 **Sugestão de visualização**
 
 Gráfico de Colunas
-
-| Campo | Valor |
-|--------|-------|
-| Categoria | Faixa Etária |
-| Valores | Soma das Quantidades |
 
 ---
 
