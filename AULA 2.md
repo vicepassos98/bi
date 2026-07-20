@@ -203,6 +203,19 @@ Essa função normalmente é utilizada para criar **medidas**.
 
 ---
 
+## Operações Matemáticas
+
+Também é possível realizar operações matemáticas tradicionais para calcular Medidas ou criar novas colunas.
+
+| Símbolo | Operação |
+|---------|--------- |
+| **+** | Soma |
+| **-** | Subtração |
+| ***** | Multiplicação |
+| **/** | Divisão |
+| **^** | Exponenciação |
+---
+
 # Exercícios utilizando relacionamentos
 
 ## Exercício 6
