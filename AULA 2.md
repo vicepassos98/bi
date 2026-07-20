@@ -209,12 +209,32 @@ Também é possível realizar operações matemáticas tradicionais para calcula
 
 | Símbolo | Operação |
 |---------|--------- |
-| **+** | Soma |
-| **-** | Subtração |
-| **'*'** | Multiplicação |
-| **/** | Divisão |
-| **^** | Exponenciação |
+| + | Soma |
+| - | Subtração |
+| * | Multiplicação |
+| / | Divisão |
+| ^ | Exponenciação |
+
 ---
+
+# Criando Colunas
+
+Vamos procurar pelo "Modo de tabela", presente na lateral esquerda do power BI. 
+Esse modo permite visualizar e editar Os dados dos bancos de dados carregados.
+Depois, na lateral direita podemos navegar através dos diversos bancos de dados carregados nesse modelo semântico.
+Acesse o banco de dados "VENDAS", nele iremos criar colunas que vão nos auxiliar na análise das informações
+
+## Criando a coluna "PREÇO PRODUTO"
+
+Para Criar a nova coluna precisamos procurar pela opção "Nova Coluna"
+O preço dos produtos já está presente na tabela "PRODUTOS", o que vamos fazer aqui é relacionar as tabelas.
+De acordo com o "ID_PRODUTO" de cada linha o PBI irá buscar aquele mesmo código na tabela "PRODUTOS", e retornar o respectivo preço.
+Para resolver esse problema iremos usar a função RELATED
+
+```DAX
+Preço Produto = RELATED(CPRODUTOS[Valor Unitário Unitário])
+```
+
 
 # Exercícios utilizando relacionamentos
 
