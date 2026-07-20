@@ -211,7 +211,7 @@ Também é possível realizar operações matemáticas tradicionais para calcula
 |---------|--------- |
 | **+** | Soma |
 | **-** | Subtração |
-| ***** | Multiplicação |
+| **'*'** | Multiplicação |
 | **/** | Divisão |
 | **^** | Exponenciação |
 ---
