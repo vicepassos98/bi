@@ -288,19 +288,18 @@ Gráfico de Rosca
 
 ### Pergunta
 
-**Monte uma matriz demonstrando:**
+**Qual Produto teve a maior quantidade Vendida?**
 
-- Quantidade de unidades vendidas;
-- Faturamento;
-- Preço.
+- Unidades vendidas;
+- Porduto;
 
 **Visualização**
 
-Matriz
+Gráfico de Barras
 
 ---
 
-## Exercício 8
+## Exercício 7
 
 
 **Qual mês apresentou o maior faturamento?**
