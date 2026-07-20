@@ -305,7 +305,7 @@ Gráfico de Barras
 
 **Variáveis**
 
-- Data da Venda
+- Data da Venda (MÊS)
 - Faturamento
 
 **Visualização**
