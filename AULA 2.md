@@ -224,16 +224,50 @@ Esse modo permite visualizar e editar Os dados dos bancos de dados carregados.
 Depois, na lateral direita podemos navegar através dos diversos bancos de dados carregados nesse modelo semântico.
 Acesse o banco de dados "VENDAS", nele iremos criar colunas que vão nos auxiliar na análise das informações
 
-## Criando a coluna "PREÇO PRODUTO"
+## Criando a coluna "Preço Produto"
 
 Para Criar a nova coluna precisamos procurar pela opção "Nova Coluna"
 O preço dos produtos já está presente na tabela "PRODUTOS", o que vamos fazer aqui é relacionar as tabelas.
 De acordo com o "ID_PRODUTO" de cada linha o PBI irá buscar aquele mesmo código na tabela "PRODUTOS", e retornar o respectivo preço.
-Para resolver esse problema iremos usar a função RELATED
+Para resolver esse problema iremos usar a função RELATED, relacionando nossa nova coluna com a coluna "Valor Unitário Unitário"
 
 ```DAX
-Preço Produto = RELATED(CPRODUTOS[Valor Unitário Unitário])
+Preço Produto = RELATED(PRODUTOS[Valor Unitário Unitário])
 ```
+
+## Criando a coluna "Valor da Venda"
+
+Para calcular o valor da venda vamos simplesmente multiplicar as colunas "Preço Produto" que acabamos de criar com a coluna "Quantidade".
+Dessa forma saberemos qual foi o valor total de cada uma das vendas.
+Assim como na coluna anterior, o PBI irá multiplicar os valores linha por linha
+
+```DAX
+Valor de Venda = Preço Produto*Quantidade
+```
+
+---
+
+# Criando Medidas
+
+Medidas são uma forma de calcular valores presentes nos bancos de dados e tranformá-los em índices. Vamos criar alguns deles facilitar nossa análise
+
+## Faturamento
+É o valor recebido pela empresa durante o período. Portanto será a soma de toda coluna "Valor de venda"
+
+```DAX
+Faturamento = SUM(VENDAS[Valor de Venda])
+```
+
+## Unidades Vendidas
+É qauntidade de intes vendidos pela empresa durante o período. Portanto será a soma de toda coluna "Quantidade"
+
+```DAX
+Unidades Vendidas = SUM(VENDAS[Unidades Vendidas])
+```
+
+
+
+
 
 
 # Exercícios utilizando relacionamentos
