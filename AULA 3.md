@@ -148,6 +148,13 @@ Vendas[Valor Venda] -
 Vendas[Custo da Venda]
 ```
 
+# Medidas
+Utilizando a função SUM() calcule as seguintes **medidas**:
+Faturamento Total - A soma de toda a coluna 'Valor Venda'
+Custo Total -  A soma de toda a coluna 'Custo da Venda'
+Lucro Total - A soma de toda a coluna 'Lucro'
+
+
 ---
 
 # Desafio
