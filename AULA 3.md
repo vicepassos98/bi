@@ -156,8 +156,8 @@ Na tabela **Clientes**, crie sozinho uma nova coluna chamada **Faixa de Renda**.
 
 Critérios:
 
-- **Alta** → renda superior a R$ 10.000.
-- **Baixa** → renda igual ou inferior a R$ 10.000.
+- **Alta** → renda superior a R$ 9.850.
+- **Baixa** → renda igual ou inferior a R$ 9.850.
 
 ---
 
