@@ -205,7 +205,7 @@ Gráfico de Colunas
 
 ## Exercício 3
 
-**Qual foi o faturamento total do período?**
+**Qual foi o faturamento total? E o Lucro**
 
 **Sugestão de visualização**
 
