@@ -37,7 +37,7 @@ g.	Crie uma medida chamada 'Lucro', utilizando a função SUM(), somando toda a 
 # Questões:
 
 ## Página 1:
-
+---
 ### 1. Qual é a idade média dos Clientes da loja? E a Mediana?
 
 ### 2. Qual é o estado com maior número de clientes?
@@ -48,9 +48,10 @@ g.	Crie uma medida chamada 'Lucro', utilizando a função SUM(), somando toda a 
 
 ### 5.	Qual o gênero teve maior participação nos Lucros da Empresa? Indique o valor em porcentagem e o valor total.
 
+---
 
 ## Página 2:
-.
+---
 ### 6.	Qual mês teve o maior faturamento? E o menor? 
 
 ### 7.	Qual Categoria de produto contribui mais para o lucro? E a que menos contribuiu?
