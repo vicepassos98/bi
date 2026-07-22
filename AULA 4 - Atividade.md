@@ -67,5 +67,6 @@ g.	Crie uma medida chamada 'Lucro', utilizando a função SUM(), somando toda a 
 ### 10. Qual foi o faturamento total do período? E o Lucro?
 
 [Tatu do Ben](https://drive.google.com/file/d/1C3RHjejTsXq5lCHOEv09MPF7IQNFZg1d)
+---
 [Galo Pera](https://drive.google.com/file/d/1BKsNpKId5tfJOAmOiKm_cisGQUspIMud/view)
 
