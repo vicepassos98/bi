@@ -1,13 +1,15 @@
 
 # Atividade Avaliativa 1
 
-##🎲[Para baixar o banco de dados clique aqui]()
+## 🎲[Para baixar o banco de dados clique aqui]()
 
-A atividade será em duplas (de até 2 participantes)
-Em uma folha você deve anotar as respostas das perguntas, sendo somente uma folha para dupla.
-E no Power Bi você deve justificar sua resposta através de visualizações. AMBOS da dupla devem elaborar a atividade em seus respectivos computadores.
-O professor só poderá auxiliar os alunos na parte de preparação dos dados (baixar, carregar, criar relações)
-Antes de responder as perguntas você deverá criar as seguintes colunas:
+## Instruções:
+
+- A atividade será em duplas (de até 2 participantes)
+- Em uma folha você deve anotar as respostas das perguntas, sendo somente uma folha para dupla.
+- No Power Bi você deve justificar sua resposta através de visualizações. AMBOS da dupla devem elaborar a atividade em seus respectivos computadores.
+- O professor só poderá auxiliar os alunos na parte de preparação dos dados (baixar, carregar, criar relações)
+- Antes de responder as perguntas você deverá criar as seguintes colunas:
 ---
 ## Colunas
 
@@ -31,16 +33,16 @@ No relatório, crie um gráfico para cada questão.
 
 ---
 
-##Questões:
+## Questões:
 
-#1.	Qual o gênero teve maior participação no faturamento da Empresa? Indique o valor em porcentagem e o valor total
+### 1.	Qual o gênero teve maior participação no faturamento da Empresa? Indique o valor em porcentagem e o valor total
 
-#2.	Qual o gênero teve maior participação nos Lucros da Empresa? Indique o valor em porcentagem e o valor total
+### 2.	Qual o gênero teve maior participação nos Lucros da Empresa? Indique o valor em porcentagem e o valor total
 
-#3.	Qual mês teve o maior faturamento? E o menor? 
+### 3.	Qual mês teve o maior faturamento? E o menor? 
 
-#4.	Qual Categoria de produto contribui mais para o lucro?
+### 4.	Qual Categoria de produto contribui mais para o lucro?
 
-#5.	Qual produto teve maior quantidade vendida no período?
+### 5.	Qual produto teve maior quantidade vendida no período?
 
-#6.	Qual Estado contribui para a maior parte do faturamento? 
+### 6.	Qual Estado contribui para a maior parte do faturamento? 
