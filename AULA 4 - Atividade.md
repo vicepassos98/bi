@@ -18,7 +18,7 @@
 ---
 ## Colunas
 
-a.	Na tabela "Vendas", crie as colunas "Custo Unitário" através da função Related(). Relacione com a Coluna 'Custo' da tabela de "Produtos".
+a.	Na tabela "Vendas", crie a coluna "Custo Unitário" através da função Related(). Relacione com a Coluna 'Custo' da tabela de "Produtos".
 
 b.	Na tabela "Vendas", crie as colunas "Preço Unitário" através da função Related(). Relacione com a Coluna 'Preço' da tabela de "Produtos".
 
