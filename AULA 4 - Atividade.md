@@ -32,7 +32,7 @@ e.	Na mesma tabela de Vendas crie a coluna "Margem Venda" que será o resultado 
 
 ## Medidas
 
-f.	Crie uma medida chamada 'Faturamento', utilizando a função SUM(), somando toda a coluna "Preço de Venda"
+f.	Crie uma medida chamada 'Faturamento', utilizando a função SUM(), somando toda a coluna "Preço de Compra"
 
 g.	Crie uma medida chamada 'Lucro', utilizando a função SUM(), somando toda a coluna "Margem Venda" 
 
