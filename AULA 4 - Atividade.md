@@ -1,12 +1,13 @@
 
-#Atividade Avaliativa 1
+# Atividade Avaliativa 1
+
 A atividade será em duplas (de até 2 participantes)
 Em uma folha você deve anotar as respostas das perguntas, sendo somente uma folha para dupla.
 E no Power Bi você deve justificar sua resposta através de visualizações. AMBOS da dupla devem elaborar a atividade em seus respectivos computadores.
 O professor só poderá auxiliar os alunos na parte de preparação dos dados (baixar, carregar, criar relações)
 Antes de responder as perguntas você deverá criar as seguintes colunas:
 ---
-##Colunas
+## Colunas
 
 a.	Na tabela "Vendas", crie as colunas "Custo Unitário" "Preço Unitário" através da função Related. Relacione com a Coluna 'Custo' da tabela de "Produtos".
 
@@ -20,7 +21,7 @@ e.	Na mesma tabela de Vendas crie a coluna "Margem Venda" que será o resultado 
 
 ---
 
-##Medidas
+## Medidas
 
 f.	Crie uma medida chamada 'Faturamento', utilizando a função sum, somando toda a coluna "Valor de venda"
 g.	Crie uma medida chamada 'Lucro', utilizando a função sum, somando toda a coluna "Margem Venda" 
