@@ -10,7 +10,10 @@
 - No Power Bi você deve justificar sua resposta através de visualizações. AMBOS da dupla devem elaborar a atividade em seus respectivos computadores.
 - O professor só poderá auxiliar os alunos na parte de preparação dos dados (baixar, carregar, criar relações)
 - No relatório, crie um gráfico para cada questão.
-- As respostas das perguntas compõem 80% da nota da prova. Os 20% restante será 
+- Critérios de Avaliação:
+    - 80% - Respostas do Teste
+    - 20% - Organização Visual do Relatório
+    - IMPORTANTE: CASO UM ALUNO DA DUPLA NÃO FAÇA O RELATÓRIO NO POWER BI, SOMENTE AQUELE QUE FEZ RECEBERÁ A NOTA O OUTRO TERÁ NOTA ZERO.
 - Antes de responder as perguntas você deverá criar as seguintes colunas:
 ---
 ## Colunas
