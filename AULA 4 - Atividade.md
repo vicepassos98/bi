@@ -10,13 +10,14 @@
 - No Power Bi você deve justificar sua resposta através de visualizações. AMBOS da dupla devem elaborar a atividade em seus respectivos computadores.
 - O professor só poderá auxiliar os alunos na parte de preparação dos dados (baixar, carregar, criar relações)
 - No relatório, crie um gráfico para cada questão.
+- As respostas das perguntas compõem 80% da nota da prova. Os 20% restante será 
 - Antes de responder as perguntas você deverá criar as seguintes colunas:
 ---
 ## Colunas
 
-a.	Na tabela "Vendas", crie as colunas "Custo Unitário" "Preço Unitário" através da função Related. Relacione com a Coluna 'Custo' da tabela de "Produtos".
+a.	Na tabela "Vendas", crie as colunas "Custo Unitário" através da função Related(). Relacione com a Coluna 'Custo' da tabela de "Produtos".
 
-b.	Na tabela "Vendas", crie as colunas "Preço Unitário" através da função Related. Relacione com a Coluna 'Preço' da tabela de "Produtos".
+b.	Na tabela "Vendas", crie as colunas "Preço Unitário" através da função Related(). Relacione com a Coluna 'Preço' da tabela de "Produtos".
 
 c.	crie a coluna "Custo da Compra" que será o resultado da multiplicação das colunas "Custo Unitário" e "Quantidade"
 
@@ -28,7 +29,7 @@ e.	Na mesma tabela de Vendas crie a coluna "Margem Venda" que será o resultado 
 
 ## Medidas
 
-f.	Crie uma medida chamada 'Faturamento', utilizando a função SUM(), somando toda a coluna "Valor de venda"
+f.	Crie uma medida chamada 'Faturamento', utilizando a função SUM(), somando toda a coluna "Valor de Venda"
 
 g.	Crie uma medida chamada 'Lucro', utilizando a função SUM(), somando toda a coluna "Margem Venda" 
 
@@ -56,8 +57,9 @@ g.	Crie uma medida chamada 'Lucro', utilizando a função SUM(), somando toda a 
 
 ### 7.	Qual Categoria de produto contribui mais para o lucro? E a que menos contribuiu?
 
-### 8.	Qual produto teve maior quantidade vendida no período?
+### 8.	Qual produto teve maior quantidade vendida no período? E no Estado do Piauí, qual foi o mais vendido?
 
 ### 9.	Qual Estado contribui para a maior parte do faturamento? 
 
 ### 10. Qual foi o faturamento total do período? E o Lucro?
+
