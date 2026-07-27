@@ -340,9 +340,9 @@ Classifique os clientes de acordo com sua idade:
 
 | Idade | Faixa Etária |
 |---|---|
-| Abaixo de 35 anos | Jovem Adulto |
-| 35 até 55 anos | Meia Idade |
-| Acima de 55 anos | Idoso |
+| Abaixo de 30 anos | Jovem  |
+| 30 até 50 anos | Adulto |
+| Acima de 50 anos | Idoso |
 
 Utilize uma estrutura de `IF` alinhado para realizar a classificação.
 
