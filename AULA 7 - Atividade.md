@@ -167,13 +167,7 @@ Crie uma medida para calcular a soma de todas as notas.
 Crie uma medida para calcular a média das notas utilizando a função `AVERAGE`.
 
 
-### e) Total de Alunos Aprovados
 
-Crie uma medida para calcular o total de alunos aprovados, usando a função `CALCUALATE`.
-
-### f) Total de Alunos Reprovados
-
-Crie uma medida para calcular o total de alunos reprovados, usando a função `CALCUALATE`.
 
 
 
@@ -206,6 +200,15 @@ IF(
     "Reprovado"
 )
 ```
+Após isso crie mais 2 medidas:
+
+### a) Total de Alunos Aprovados
+
+Crie uma medida para calcular o total de alunos aprovados, usando a função `CALCUALATE`.
+
+### b) Total de Alunos Reprovados
+
+Crie uma medida para calcular o total de alunos reprovados, usando a função `CALCUALATE`.
 
 ---
 
@@ -222,21 +225,6 @@ Utilize as seguintes regras:
 | Acima de 10 faltas | Crítica |
 
 Utilize uma estrutura de **IF alinhada** para realizar a classificação.
-
-Exemplo:
-
-```DAX
-Nivel_Frequencia =
-IF(
-    Notas[Faltas] <= 5,
-    "Boa",
-    IF(
-        Notas[Faltas] <= 10,
-        "Regular",
-        "Crítica"
-    )
-)
-```
 
 ---
 
@@ -266,15 +254,17 @@ Organize o relatório final no Power BI utilizando os seguintes elementos visuai
 
 ## Cartões (Cards)
 
-Crie três cartões com os seguintes indicadores:
+Crie um ou vários cartões com os seguintes indicadores:
 
 - **Total de Alunos**
 - **Média Geral de Notas**
 - **Total de Faltas**
+- **Total de Alunos Aprovados**
+- **Total de Alunos Reprovados**
 
 ---
 
-## Gráfico de Barras 1
+## Gráfico 1
 
 Crie um gráfico apresentando:
 
@@ -282,7 +272,7 @@ Crie um gráfico apresentando:
 
 ---
 
-## Gráfico de Barras 2
+## Gráfico 2
 
 Crie um gráfico apresentando:
 
