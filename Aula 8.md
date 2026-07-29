@@ -1,5 +1,7 @@
 # Trabalhando com Correlação na Prática: Renda x Setores Econômicos
 
+🎲🎲[Download do Banco de dados de hoje](https://docs.google.com/spreadsheets/d/1eX2PEHQeL2aUsokLgvH7RKDdO7RNuJk2tPxm2G64fZ8/export?format=csv&gid=2064696384)
+
 ## 1. Crrelação
 
 
