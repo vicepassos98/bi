@@ -6,13 +6,6 @@
 
 [Clique aqui para pegar um vírus letal (ou baixar o banco de dados 🎲🎲)](https://docs.google.com/spreadsheets/d/1v7LDyP8Pr0idP8O3yCFM_XtOquIaq2aX/export?format=xlsx)
 
-Procure pelo link:
-
-> **Power BI - Drive**
-
-Baixe o arquivo:
-
-> `BD_KPI.xlsx`
 
 ### Importar o arquivo para o Power BI
 
