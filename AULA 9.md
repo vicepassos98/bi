@@ -495,4 +495,3 @@ Ao final da aula, o dashboard deverá permitir uma análise rápida dos principa
 9. Quais produtos precisam de reposição?
 10. Como as vendas evoluíram ao longo do tempo?
 
-> **Objetivo da aula:** transformar dados brutos em indicadores que auxiliem na tomada de decisões.
