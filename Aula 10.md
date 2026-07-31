@@ -206,9 +206,6 @@ IF(
 )
 ```
 
-### Discussão
-
-Mostrar aos alunos que o `IF` pode ser utilizado de forma aninhada, mas que existem outras funções DAX que podem deixar regras com muitas categorias mais organizadas.
 
 ---
 
