@@ -1,6 +1,6 @@
 # AULA 10 Revisão de Power BI — Análise das Olimpíadas
 
-[DOWNLOAD BANCO DE DADOS] (https://drive.google.com/uc?export=download&id=1NWD1ChCgPLbdxsO6dkepv59SJTr80vJ-&utm_source=chatgpt.com)
+[DOWNLOAD BANCO DE DADOS](https://drive.google.com/uc?export=download&id=1NWD1ChCgPLbdxsO6dkepv59SJTr80vJ-&utm_source=chatgpt.com)
 
 # 1. Objetivos da aula
 
@@ -806,9 +806,8 @@ Ao terminar a aula, o aluno deverá ter revisado:
 
 # 29. Projeto final
 
-## 🏅 Olimpíadas — Dashboard de Desempenho
+## Olimpíadas — Dashboard de Desempenho
 
-O aluno deverá entregar um dashboard interativo capaz de responder:
 
 > **Quem participou, quem ganhou e como o desempenho olímpico mudou ao longo do tempo?**
 
