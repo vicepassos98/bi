@@ -4,7 +4,6 @@
 
 # 1. Objetivos da aula
 
-Ao final da aula, o aluno deverá ser capaz de:
 
 * Revisar a importação e preparação de dados no Power Query.
 * Diferenciar **coluna calculada** de **medida**.
