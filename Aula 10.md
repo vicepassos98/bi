@@ -213,16 +213,8 @@ IF(
 
 Agora vamos passar das colunas para as medidas.
 
-## Medida 1 — Total de registros
 
-```DAX
-Total Registros =
-COUNTROWS('Olimpiadas')
-```
-
----
-
-## Medida 2 — Total de atletas
+## Medida 1 — Total de atletas
 
 ```DAX
 Total Atletas =
@@ -231,7 +223,7 @@ DISTINCTCOUNT('Olimpiadas'[id_atleta])
 
 ---
 
-## Medida 3 — Total de medalhas
+## Medida 2 — Total de medalhas
 
 ```DAX
 Total Medalhas =
