@@ -1191,7 +1191,7 @@ Ao final do projeto, o usuário deverá conseguir abrir o Dashboard, aplicar fil
 
 # AO TERMINAR, REVISE TODO O DASHBOARD. E ENVIE O ARQUIVO COMO ANEXO PARA O E-MAIL: vicepassos98@gmail.com
 ## No Assunto insira os nomes dos alunos
-No corpo do e-mail diga qual é o seu [favorito](https://www.instagram.com/reel/DbHQawzIw1I/?igsh=MTFpN2hqeGs0Y3htNg==) (Teste contra IA)
+No corpo do e-mail diga qual é o seu [favorito](https://www.instagram.com/reel/DbHQawzIw1I) (Teste contra IA)
 
 **Power BI — Trabalho Final**
 
