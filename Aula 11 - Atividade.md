@@ -1,6 +1,5 @@
 # LOGÍSTICA EXPRESS - Trabalho Final de Power BI
 
-**Professor:** Victor Passos 
 **Projeto:** Análise de Entregas, Clientes, Veículos e Metas por Região
 
 ---
