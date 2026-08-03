@@ -1,8 +1,6 @@
-# LOGÍSTICA EXPRESS
+# LOGÍSTICA EXPRESS - Trabalho Final de Power BI
 
-## Trabalho Final de Power BI
-
-**Professor:** Victor Passos
+**Professor:** Victor Passos 
 **Projeto:** Análise de Entregas, Clientes, Veículos e Metas por Região
 
 ---
@@ -32,6 +30,8 @@ O projeto será dividido em **três grandes etapas**:
 ---
 
 # 2. Bases de Dados
+
+[PARA BAIXAR O BANCO DE DADOS CLIQUE AQUI](https://docs.google.com/spreadsheets/d/1amYMWey4tU46yEQwCe4cHTwCvzy3bEle/export?format=xlsx)
 
 O projeto utiliza três tabelas que estão no arquivo Excel e uma quarta tabela que será criada diretamente no Power BI.
 
