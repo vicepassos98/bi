@@ -837,14 +837,6 @@ Quilometros_Rodados
 %_Entregas_com_Atraso
 ```
 
-No indicador de atrasos, utilize **formatação condicional**.
-
-Sugestão:
-
-```text
-Acima de 40% → vermelho
-```
-
 ---
 
 # 27. Indicadores com Meta
@@ -998,13 +990,6 @@ Na coluna:
 ```text
 Preco_Final
 ```
-
-adicione:
-
-**Barras de dados**
-
-Isso permitirá identificar visualmente quais entregas possuem maior valor.
-
 ---
 
 # 32. Página 4 — Frota e Veículos
@@ -1177,61 +1162,9 @@ Antes de entregar o projeto, confira se todas as etapas foram realizadas.
 
 ---
 
-# 38. Desafio Final
 
-Depois de concluir o Dashboard, responda às seguintes perguntas utilizando os próprios dados do Power BI:
 
-### 1. Qual região apresenta o maior faturamento?
-
-```text
-Resposta:
-```
-
-### 2. Qual região está mais distante de sua meta de faturamento?
-
-```text
-Resposta:
-```
-
-### 3. Qual é o percentual total de entregas atrasadas?
-
-```text
-Resposta:
-```
-
-### 4. Qual tipo de veículo gera maior faturamento?
-
-```text
-Resposta:
-```
-
-### 5. Quantos veículos estão atualmente em manutenção?
-
-```text
-Resposta:
-```
-
-### 6. Clientes Premium representam uma parcela significativa do faturamento?
-
-```text
-Resposta:
-```
-
-### 7. Existe relação entre distância percorrida e valor do frete?
-
-```text
-Resposta:
-```
-
-### 8. A empresa está atingindo sua meta de pontualidade?
-
-```text
-Resposta:
-```
-
----
-
-# 39. Entrega do Projeto
+# 38. Entrega do Projeto
 
 O projeto final deverá apresentar:
 
@@ -1256,8 +1189,9 @@ Ao final do projeto, o usuário deverá conseguir abrir o Dashboard, aplicar fil
 
 ---
 
-# Fim do Projeto
-
+# AO TERMINAR, REVISE TODO O DASHBOARD. E ENVIE O ARQUIVO COMO ANEXO PARA O E-MAIL: vicepassos98@gmail.com
+## No Assunto insira os nomes dos alunos
+## No corpo do e-mail diga qual é o seu [favorito](https://www.instagram.com/reel/DbHQawzIw1I/?igsh=MTFpN2hqeGs0Y3htNg==) 
 ## LOGÍSTICA EXPRESS
 
 **Power BI — Trabalho Final**
