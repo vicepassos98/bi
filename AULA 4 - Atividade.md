@@ -1,5 +1,5 @@
 
-# Atividade Avaliativa 1
+# Atividadezinha Avaliativa 1
 
 ## 🎲[Para baixar o banco de dados clique aqui](https://docs.google.com/spreadsheets/d/13t9LYeE6L0-9JfrGihfs1NC4a222oKB6/export?format=xlsx&utm_source=chatgpt.com)
 
