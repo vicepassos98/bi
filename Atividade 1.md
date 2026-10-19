@@ -26,7 +26,7 @@ c.	crie a coluna "Custo da Compra" que será o resultado da multiplicação das 
 
 d.	crie a coluna "Preço da Compra" que será o resultado da multiplicação das colunas "Preço Unitário" e "Quantidade"
 
-e.	Na mesma tabela de Vendas crie a coluna "Margem Venda" que será o resultado da diferença entre as colunas de "Preço Compra" e "Custo de Compra"
+e.	Na mesma tabela de Vendas crie a coluna "Margem Venda" que será o resultado da diferença entre as colunas de "Preço DA Compra" e "Custo de Compra"
 
 ---
 
