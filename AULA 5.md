@@ -1,4 +1,4 @@
-# AULA 6 — Funções DAX, Filtros e Interatividade
+# AULA 5 — Funções DAX, Filtros e Interatividade
 
 ## [DOWNLOAD DO BANCO DE DADOS 🎲🎲🎲](https://docs.google.com/spreadsheets/d/1B_Rq0H7M52ncIJbcHQC4ZxrObzpGM-En/export?format=xlsx&utm_source=chatgpt.com)
 
