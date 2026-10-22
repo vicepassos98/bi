@@ -2,6 +2,7 @@
 
 🎲🎲[Download do Banco de dados](https://docs.google.com/spreadsheets/d/1eX2PEHQeL2aUsokLgvH7RKDdO7RNuJk2tPxm2G64fZ8/export?format=csv&gid=2064696384)
 
+[quase pronto](https://drive.google.com/uc?export=download&id=1W_9KS6re_yvOe57wrkGCRXal4cBFCHT2&utm_source=chatgpt.com)
 ## 1. Correlação
 
 
