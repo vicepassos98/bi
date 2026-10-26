@@ -204,13 +204,13 @@ IF(
 ```
 Após isso crie mais 2 medidas:
 
-### a) Total de Alunos Aprovados
+### a) Total de Aprovações
 
-Crie uma medida para calcular o total de alunos aprovados, usando a função `CALCUALATE`.
+Crie uma medida para CONTAR (count) o total de aprovadoções, usando a função `CALCUALATE`.
 
-### b) Total de Alunos Reprovados
+### b) Total de Reprovações
 
-Crie uma medida para calcular o total de alunos reprovados, usando a função `CALCUALATE`.
+Crie uma medida para CONTAR (count) o total de reprovações, usando a função `CALCUALATE`.
 
 ---
 
@@ -322,7 +322,7 @@ Ao final da atividade, o relatório deverá permitir uma análise completa do de
 
 - Identificar o desempenho médio por turma;
 - Analisar a quantidade de faltas por disciplina;
-- Identificar alunos aprovados e reprovados;
+- Identificar aprovações e reprovações;
 - Classificar o nível de frequência dos alunos;
 - Comparar faltas e desempenho acadêmico;
 - Utilizar filtros para explorar diferentes turmas e disciplinas;
