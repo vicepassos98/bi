@@ -13,6 +13,8 @@ Você foi contratado como **analista de dados** e receberá três tabelas com in
 
 Sua missão é construir um **relatório no Power BI** que confirme ou refute essa hipótese.
 
+Ao terminar, enviar o dashboard como anexo para o e-mail: vicepassos98@gmail.com. Indique no campo Assunto seu nome.
+
 ---
 
 # Tabelas Fornecidas
