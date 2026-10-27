@@ -1,4 +1,4 @@
-# AULA 9 Revisão de Power BI — Análise das Olimpíadas
+# AULA 8 Análise das Olimpíadas
 
 [🥇🥈🥉DOWNLOAD BANCO DE DADOS](https://drive.google.com/uc?export=download&id=1NWD1ChCgPLbdxsO6dkepv59SJTr80vJ-&utm_source=chatgpt.com)
 
