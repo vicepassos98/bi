@@ -147,32 +147,10 @@ Ao colocar `sexo` em uma tabela junto com a medida, o resultado passa a ser calc
 
 ---
 
-# 6. Exercício 1 — Criando uma coluna com IF
-
-Criar uma coluna chamada:
-
-**Status Medalha**
-
-Regra:
-
-* Se `medalha` estiver vazia → `"Sem medalha"`
-* Caso contrário → `"Medalhista"`
-
-### Fórmula
-
-```DAX
-Status Medalha =
-IF(
-    ISBLANK('Olimpiadas'[medalha]),
-    "Sem medalha",
-    "Medalhista"
-)
-```
-
 
 ---
 
-# 7. Exercício 2 — Criando uma coluna numérica
+# 6. Exercício 2 — Criando uma coluna numérica
 
 Criar uma coluna chamada:
 
@@ -209,7 +187,7 @@ IF(
 
 ---
 
-# 8. Criando as primeiras medidas
+# 7. Criando as primeiras medidas
 
 Agora vamos passar das colunas para as medidas.
 
@@ -411,8 +389,6 @@ LOOKUPVALUE(
 ```
 
 ### Discussão
-
-Perguntar:
 
 > Qual solução fica mais fácil de manter se amanhã criarmos novas categorias?
 
