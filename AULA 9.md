@@ -32,10 +32,7 @@ Regredir *níveis* de séries que crescem ao longo do tempo gera correlação es
 - Variável Y: variação da taxa de desocupação em pontos percentuais (taxa do trimestre menos a taxa do mesmo trimestre do ano anterior).
 - Sinal esperado da inclinação: **negativo** (mais crescimento, menos desemprego).
 
-> **Atenção (professor):** o IBGE revisa as séries trimestrais a cada divulgação do 3º trimestre. Os números podem mudar de um ano para o outro. Baixe uma versão para a aula e avise os alunos de que o resultado deles pode diferir um pouco do seu. Confira os códigos e as variáveis das tabelas no SIDRA antes de usar.
-
 ---
-
 
 
 ---
@@ -101,9 +98,75 @@ Sem tocar no Power BI. Exemplo guia: "se a economia cresce 2% a mais, quantos po
 
 1. Inserir o visual de Python e habilitar scripts.
 2. Arrastar `data`, `pib_var_interanual` e `desocupacao_var_pp` para Valores.
-3. Colar o script do professor (`regressao_visual.py`): dispersão com reta, banda de confiança, equação, R², p-valor e gráfico de resíduos.
-4. Pedir que alterem apenas título, cores e rótulos dos eixos.
-5. Filtrar por período com um segmentador e ver o gráfico mudar.
+3. Colar o script: dispersão com reta, banda de confiança, equação, R², p-valor e gráfico de resíduos.
+   ´´´python
+   import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import statsmodels.api as sm
+
+# ---- AJUSTES PERMITIDOS AOS ALUNOS ----
+TITULO = "Crescimento do PIB x variação do desemprego"
+ROTULO_X = "Crescimento do PIB (% vs mesmo trimestre do ano anterior)"
+ROTULO_Y = "Variação da taxa de desocupação (p.p.)"
+COR_PONTOS = "#2E75B6"
+COR_RETA = "#C00000"
+COR_2020 = "#ED7D31"
+# ---------------------------------------
+
+df = dataset[["data", "pib_var_interanual", "desocupacao_var_pp"]].dropna().copy()
+df["data"] = pd.to_datetime(df["data"])
+x = df["pib_var_interanual"]
+y = df["desocupacao_var_pp"]
+
+# Regressão linear simples (mínimos quadrados)
+modelo = sm.OLS(y, sm.add_constant(x)).fit()
+intercepto, inclinacao = modelo.params
+r2 = modelo.rsquared
+p_valor = modelo.pvalues.iloc[1]
+ic = modelo.conf_int().iloc[1]
+
+# Reta e banda de confiança (apenas dentro da faixa observada)
+xs = np.linspace(x.min(), x.max(), 100)
+pred = modelo.get_prediction(sm.add_constant(xs)).summary_frame(alpha=0.05)
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11, 4.5),
+                               gridspec_kw={"width_ratios": [2, 1]})
+
+# Gráfico 1: dispersão + reta (2020 destacado)
+pandemia = df["data"].dt.year == 2020
+ax1.scatter(x[~pandemia], y[~pandemia], color=COR_PONTOS, alpha=0.8, label="Trimestres")
+ax1.scatter(x[pandemia], y[pandemia], color=COR_2020, alpha=0.9, label="2020")
+ax1.plot(xs, pred["mean"], color=COR_RETA, linewidth=2, label="Reta de regressão")
+ax1.fill_between(xs, pred["mean_ci_lower"], pred["mean_ci_upper"],
+                 color=COR_RETA, alpha=0.15, label="IC 95% da reta")
+ax1.axhline(0, color="gray", linewidth=0.8)
+ax1.axvline(0, color="gray", linewidth=0.8)
+ax1.set_title(TITULO)
+ax1.set_xlabel(ROTULO_X)
+ax1.set_ylabel(ROTULO_Y)
+
+texto = (f"y = {intercepto:.2f} + ({inclinacao:.2f})·x\n"
+         f"R² = {r2:.2f}\n"
+         f"p-valor = {p_valor:.4f}\n"
+         f"IC 95% inclinação: [{ic[0]:.2f}; {ic[1]:.2f}]\n"
+         f"n = {len(df)} trimestres")
+ax1.text(0.03, 0.03, texto, transform=ax1.transAxes, va="bottom",
+         bbox=dict(boxstyle="round", facecolor="white", alpha=0.9))
+ax1.legend(loc="upper right")
+
+# Gráfico 2: resíduos
+ax2.scatter(modelo.fittedvalues, modelo.resid, color=COR_PONTOS, alpha=0.8)
+ax2.axhline(0, color=COR_RETA, linestyle="--")
+ax2.set_title("Resíduos")
+ax2.set_xlabel("Valor previsto (p.p.)")
+ax2.set_ylabel("Resíduo")
+
+plt.tight_layout()
+plt.show()
+
+5. Alterem apenas título, cores e rótulos dos eixos.
+6. Filtrar por período com um segmentador e ver o gráfico mudar.
 
 
 
