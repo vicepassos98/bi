@@ -1,6 +1,6 @@
 # Roteiro de aula: Power BI com dados do IBGE, banco online, Python e regressão
 
-**Aula final do curso de Power BI** · Público: iniciantes com boa bagagem do curso · Duração: 3h
+
 
 **Caso:** Lei de Okun no Brasil. Qual a relação entre o crescimento do PIB e a variação da taxa de desemprego?
 
