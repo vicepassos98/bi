@@ -99,7 +99,7 @@ Sem tocar no Power BI. Exemplo guia: "se a economia cresce 2% a mais, quantos po
 1. Inserir o visual de Python e habilitar scripts.
 2. Arrastar `data`, `pib_var_interanual` e `desocupacao_var_pp` para Valores.
 3. Colar o script: dispersão com reta, banda de confiança, equação, R², p-valor e gráfico de resíduos.
-   ´´´python
+```
    import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -164,6 +164,8 @@ ax2.set_ylabel("Resíduo")
 
 plt.tight_layout()
 plt.show()
+
+```
 
 5. Alterem apenas título, cores e rótulos dos eixos.
 6. Filtrar por período com um segmentador e ver o gráfico mudar.
