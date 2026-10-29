@@ -108,7 +108,7 @@ Sem tocar no Power BI. Exemplo guia: "se a economia cresce 2% a mais, quantos po
     pip install numpy
     pip install matplotlib
     pip install statsmodels
-``
+```
 1. Inserir o visual de Python e habilitar scripts.
 2. Arrastar `data`, `pib_var_interanual` e `desocupacao_var_pp` para Valores.
 3. Colar o script: dispersão com reta, banda de confiança, equação, R², p-valor e gráfico de resíduos.
