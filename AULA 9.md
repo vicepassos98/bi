@@ -1,5 +1,7 @@
 # Roteiro de aula: Power BI com dados do IBGE, banco online, Python e regressão
 
+[arquivo parcial](https://drive.google.com/uc?export=download&id=1lOqxEJvBuxGym5jgTSWSXdco2mnLCboC&utm_source=chatgpt.com)
+
 
 
 **Caso:** Lei de Okun no Brasil. Qual a relação entre o crescimento do PIB e a variação da taxa de desemprego?
