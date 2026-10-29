@@ -96,12 +96,19 @@ Sem tocar no Power BI. Exemplo guia: "se a economia cresce 2% a mais, quantos po
 
 **Prática**
 0. Baixar as bibliotecas no python através do CMD:
+
     a. Win+R para abrir o executar e depois digite cmd
+    
     b. Vamos Precisar baixar 4 bibliotecas para fazer esses visuais
+    
         i. Pandas
+        
         ii. Numpy
+        
         iii. matplotlib
+        
         iv. Statsmodels
+        
     c. Vamos utilizar o pip para baixar as bibliotecas:
 ```
     pip install pandas
