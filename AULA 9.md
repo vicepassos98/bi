@@ -95,12 +95,25 @@ Sem tocar no Power BI. Exemplo guia: "se a economia cresce 2% a mais, quantos po
 - No Service só funcionam as bibliotecas suportadas. Conferir a lista oficial antes de publicar.
 
 **Prática**
-
+0. Baixar as bibliotecas no python através do CMD:
+    a. Win+R para abrir o executar e depois digite cmd
+    b. Vamos Precisar baixar 4 bibliotecas para fazer esses visuais
+        i. Pandas
+        ii. Numpy
+        iii. matplotlib
+        iv. Statsmodels
+    c. Vamos utilizar o pip para baixar as bibliotecas:
+    ````
+    pip install pandas
+    pip install numpy
+    pip install matplotlib
+    pip install statsmodels
+    ```
 1. Inserir o visual de Python e habilitar scripts.
 2. Arrastar `data`, `pib_var_interanual` e `desocupacao_var_pp` para Valores.
 3. Colar o script: dispersão com reta, banda de confiança, equação, R², p-valor e gráfico de resíduos.
 ```
-   import numpy as np
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
@@ -130,10 +143,8 @@ ic = modelo.conf_int().iloc[1]
 xs = np.linspace(x.min(), x.max(), 100)
 pred = modelo.get_prediction(sm.add_constant(xs)).summary_frame(alpha=0.05)
 
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11, 4.5),
-                               gridspec_kw={"width_ratios": [2, 1]})
+fig, ax1 = plt.subplots(figsize=(8, 5))
 
-# Gráfico 1: dispersão + reta (2020 destacado)
 pandemia = df["data"].dt.year == 2020
 ax1.scatter(x[~pandemia], y[~pandemia], color=COR_PONTOS, alpha=0.8, label="Trimestres")
 ax1.scatter(x[pandemia], y[pandemia], color=COR_2020, alpha=0.9, label="2020")
@@ -155,16 +166,8 @@ ax1.text(0.03, 0.03, texto, transform=ax1.transAxes, va="bottom",
          bbox=dict(boxstyle="round", facecolor="white", alpha=0.9))
 ax1.legend(loc="upper right")
 
-# Gráfico 2: resíduos
-ax2.scatter(modelo.fittedvalues, modelo.resid, color=COR_PONTOS, alpha=0.8)
-ax2.axhline(0, color=COR_RETA, linestyle="--")
-ax2.set_title("Resíduos")
-ax2.set_xlabel("Valor previsto (p.p.)")
-ax2.set_ylabel("Resíduo")
-
 plt.tight_layout()
 plt.show()
-
 ```
 
 5. Alterem apenas título, cores e rótulos dos eixos.
