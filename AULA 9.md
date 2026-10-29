@@ -95,6 +95,7 @@ Sem tocar no Power BI. Exemplo guia: "se a economia cresce 2% a mais, quantos po
 - No Service só funcionam as bibliotecas suportadas. Conferir a lista oficial antes de publicar.
 
 **Prática**
+
 0. Baixar as bibliotecas no python através do CMD:
 
     a. Win+R para abrir o executar e depois digite cmd
