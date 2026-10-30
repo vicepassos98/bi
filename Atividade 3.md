@@ -939,7 +939,7 @@ O gráfico deverá apresentar:
 
 # 30. Entregas por Mês
 
-Crie um gráfico de colunas.
+Crie um gráfico de linhas.
 
 ### Eixo X
 
@@ -953,7 +953,7 @@ Agrupe por:
 Mês
 ```
 
-### Valores
+### Valores (Eixo Y)
 
 ```text
 Contagem de entregas
@@ -961,6 +961,7 @@ Contagem de entregas
 
 Também utilize:
 
+(Eixo y Secundário)
 ```text
 %_Entregas_com_Atraso
 ```
