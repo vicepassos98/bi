@@ -54,6 +54,7 @@ Nesta aula você aprenderá a:
 Antes de construir qualquer gráfico, faça uma pergunta.
 
 > **Todo gráfico responde a uma pergunta.**
+> Depois pense, quais variáveis preciso para responder essa pergunta? Pode ser uma variável, podem ser duas, três, enfim.
 
 ---
 
