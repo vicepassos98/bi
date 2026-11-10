@@ -122,6 +122,40 @@ Esse índice é a média de produção por pessoa em uma cidade. Quanto maior o 
 Contudo é bom lembrar que a riqueza não é plenamente distribuida, sendo que alguns acabam recebendo mais que outros.
 Para Calcular, basta dividir o PIB Total pela População.
 
+## Trocando UF para o nome dos estados:
+Estado Completo =
+SWITCH(
+    TRUE(),
+    'IBGE Cidades - IBGE Cidades'[UF] = "AC", "Acre",
+    'IBGE Cidades - IBGE Cidades'[UF] = "AL", "Alagoas",
+    'IBGE Cidades - IBGE Cidades'[UF] = "AP", "Amapá",
+    'IBGE Cidades - IBGE Cidades'[UF] = "AM", "Amazonas",
+    'IBGE Cidades - IBGE Cidades'[UF] = "BA", "Bahia",
+    'IBGE Cidades - IBGE Cidades'[UF] = "CE", "Ceará",
+    'IBGE Cidades - IBGE Cidades'[UF] = "DF", "Distrito Federal",
+    'IBGE Cidades - IBGE Cidades'[UF] = "ES", "Espírito Santo",
+    'IBGE Cidades - IBGE Cidades'[UF] = "GO", "Goiás",
+    'IBGE Cidades - IBGE Cidades'[UF] = "MA", "Maranhão",
+    'IBGE Cidades - IBGE Cidades'[UF] = "MT", "Mato Grosso",
+    'IBGE Cidades - IBGE Cidades'[UF] = "MS", "Mato Grosso do Sul",
+    'IBGE Cidades - IBGE Cidades'[UF] = "MG", "Minas Gerais",
+    'IBGE Cidades - IBGE Cidades'[UF] = "PA", "Pará",
+    'IBGE Cidades - IBGE Cidades'[UF] = "PB", "Paraíba",
+    'IBGE Cidades - IBGE Cidades'[UF] = "PR", "Paraná",
+    'IBGE Cidades - IBGE Cidades'[UF] = "PE", "Pernambuco",
+    'IBGE Cidades - IBGE Cidades'[UF] = "PI", "Piauí",
+    'IBGE Cidades - IBGE Cidades'[UF] = "RJ", "Rio de Janeiro",
+    'IBGE Cidades - IBGE Cidades'[UF] = "RN", "Rio Grande do Norte",
+    'IBGE Cidades - IBGE Cidades'[UF] = "RS", "Rio Grande do Sul",
+    'IBGE Cidades - IBGE Cidades'[UF] = "RO", "Rondônia",
+    'IBGE Cidades - IBGE Cidades'[UF] = "RR", "Roraima",
+    'IBGE Cidades - IBGE Cidades'[UF] = "SC", "Santa Catarina",
+    'IBGE Cidades - IBGE Cidades'[UF] = "SP", "São Paulo",
+    'IBGE Cidades - IBGE Cidades'[UF] = "SE", "Sergipe",
+    'IBGE Cidades - IBGE Cidades'[UF] = "TO", "Tocantins",
+    "Não identificado"
+)
+
 
 
 
