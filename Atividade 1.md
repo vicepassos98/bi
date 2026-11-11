@@ -7,9 +7,9 @@
 
 - A atividade será em duplas (de até 2 participantes)
 - Em uma folha você deve anotar as respostas das perguntas, sendo somente uma folha para dupla.
-- No Power Bi você deve justificar sua resposta através de visualizações. AMBOS da dupla devem elaborar a atividade em seus respectivos computadores.
+- No Power Bi você deve justificar sua resposta através de visualizações. **AMBOS** da dupla devem elaborar a atividade em seus respectivos computadores.
 - O professor só poderá auxiliar os alunos na parte de preparação dos dados (baixar, carregar, criar relações)
-- No relatório, crie um gráfico para cada questão.
+- No relatório, crie gráficos, cartões, matrizes para justificar a resposta.
 - Critérios de Avaliação:
     - 80% - Respostas do Teste
     - 20% - Organização Visual do Relatório
@@ -39,8 +39,6 @@ g.	Crie uma medida chamada 'Lucro', utilizando a função SUM(), somando toda a 
 ---
 
 # Questões:
-
-## Página 1:
 ---
 ### 1. Qual é a idade média dos Clientes da loja? E a Mediana?
 
@@ -52,17 +50,13 @@ g.	Crie uma medida chamada 'Lucro', utilizando a função SUM(), somando toda a 
 
 ### 5.	Qual o gênero teve maior participação nos Lucros da Empresa? Indique o valor em porcentagem e o valor total.
 
----
-
-## Página 2:
----
 ### 6.	Qual mês teve o maior faturamento? E o menor? 
 
 ### 7.	Qual Categoria de produto contribui mais para o lucro? E a que menos contribuiu?
 
-### 8.	Qual produto teve maior quantidade vendida no período? E no Estado do Piauí, qual foi o mais vendido?
+### 8.	Qual produto teve maior quantidade vendida? E entre as mulheres, qual foi o produto mais vendido?
 
 ### 9.	Qual Estado contribui para a maior parte do faturamento? 
 
-### 10. Qual foi o faturamento total do período? E o Lucro?
+### 10. Qual foi o faturamento total do período? E o Lucro? E no Estado do Piauí, qual foi o valor total de Faturamento e Lucro?
 
