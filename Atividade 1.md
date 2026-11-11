@@ -48,15 +48,14 @@ g.	Crie uma medida chamada 'Lucro', utilizando a função SUM(), somando toda a 
 
 ### 4.	Qual o gênero teve maior participação no faturamento da Empresa? Indique o valor em porcentagem e valor total.
 
-### 5.	Qual o gênero teve maior participação nos Lucros da Empresa? Indique o valor em porcentagem e o valor total.
+### 5.	Qual mês teve o maior faturamento? E o menor? Indique o mês e o valor
 
-### 6.	Qual mês teve o maior faturamento? E o menor? 
+### 6.	Qual **Categoria** de produto contribui mais para o **lucro**? E a que menos contribuiu?
 
-### 7.	Qual Categoria de produto contribui mais para o lucro? E a que menos contribuiu?
+### 7.	Qual **produto** teve maior **quantidade** vendida?
 
-### 8.	Qual produto teve maior quantidade vendida? E entre as mulheres, qual foi o produto mais vendido?
+### 8.  Qual foi o produto com maior quantidade vendida entre as **Mullheres**?
 
-### 9.	Qual Estado contribui para a maior parte do faturamento? 
+### 9.	Qual **Estado** contribui para a maior parte do **faturamento**? 
 
-### 10. Qual foi o faturamento total do período? E o Lucro? E no Estado do Piauí, qual foi o valor total de Faturamento e Lucro?
-
+### 10. Qual foi o **faturamento** total do período? E o **Lucro**? 
