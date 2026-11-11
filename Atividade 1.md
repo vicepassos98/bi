@@ -58,4 +58,4 @@ g.	Crie uma medida chamada 'Lucro', utilizando a função SUM(), somando toda a 
 
 ### 9.	Qual **Estado** contribui para a maior parte do **faturamento**? 
 
-### 10. Qual foi o **faturamento** total do período? E o **Lucro**? 
+### 10. Qual foi o **faturamento** total? E o **Lucro**? 
