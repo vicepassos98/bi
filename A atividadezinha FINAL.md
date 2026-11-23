@@ -638,7 +638,7 @@ A ideia é criar uma apresentação semelhante a um sistema ou aplicativo.
 
 A segunda página será o principal painel gerencial.
 
-## Cards de KPI
+## Cartões
 
 Crie cartões para:
 
