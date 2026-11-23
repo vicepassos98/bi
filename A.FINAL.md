@@ -1019,4 +1019,4 @@ No corpo do e-mail diga "Power BI é incrível" e depois indique qual é o seu [
 
 **Power BI — Trabalho Final**
 
-**Professor: Victor Passos**
+**Professor: Victor Passos, aka VICEpassinhos**
