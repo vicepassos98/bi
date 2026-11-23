@@ -339,6 +339,7 @@ Metas_Regiao
 
 ---
 
+
 # 10. Etapa 2 — Colunas Calculadas com DAX
 
 Agora começaremos a utilizar **DAX**.
@@ -349,32 +350,23 @@ Para criar uma coluna:
 
 **Exibição de Dados → selecione a tabela → Nova Coluna**
 
+> **Atenção:** nesta etapa, as fórmulas **não serão fornecidas**. Cada item descreve a lógica que deve ser construída. Escolha as funções DAX adequadas e escreva as fórmulas por conta própria.
+
 ---
 
 # 11. Coluna 1 — Custo_KM_Veiculo
 
 ### Objetivo
 
-Precisamos trazer para a tabela `Entregas` o custo por quilômetro do veículo utilizado em cada entrega.
+Trazer para a tabela `Entregas` o custo por quilômetro do veículo utilizado em cada entrega.
 
-Para isso, utilizaremos a função:
+### Como fazer
 
-```DAX
-RELATED
-```
+Na tabela `Entregas`, crie uma nova coluna calculada com o nome `Custo_KM_Veiculo`. O valor de cada linha deve ser o `Custo_km` do veículo que realizou aquela entrega.
 
-Crie uma nova coluna na tabela `Entregas`:
+Como o `Custo_km` está em **outra tabela** (`Veiculos`), utilize a função do DAX que busca o valor de uma coluna em uma tabela relacionada, aproveitando o relacionamento criado entre `Entregas` e `Veiculos` pela coluna `ID_Veiculo`.
 
-```DAX
-Custo_KM_Veiculo =
-RELATED(Veiculos[Custo_km])
-```
-
-### Como funciona?
-
-A função `RELATED` utiliza o relacionamento entre as tabelas.
-
-O Power BI identifica o veículo da entrega e busca o seu respectivo custo por quilômetro.
+Ao final, confira se os valores da coluna correspondem aos custos da tabela abaixo.
 
 ---
 
@@ -393,123 +385,43 @@ O Power BI identifica o veículo da entrega e busca o seu respectivo custo por q
 
 Agora vamos calcular o valor bruto do frete.
 
-O cálculo considera:
+### Como fazer
 
-* Custo por quilômetro;
-* Distância percorrida;
-* Peso da carga.
+Na tabela `Entregas`, crie uma coluna calculada chamada `Valor_Frete`. O valor bruto de cada entrega é a **soma de duas partes**:
 
-Crie a coluna:
+1. **Custo do percurso:** multiplique o custo por quilômetro do veículo (coluna criada no passo anterior) pela distância percorrida na entrega.
+2. **Custo pelo peso:** multiplique o peso da carga, em quilos, pelo valor fixo de **R$ 0,25 por quilo**.
 
-```DAX
-Valor_Frete =
-Entregas[Custo_KM_Veiculo] * Entregas[Distancia_km]
-    + Entregas[Peso_kg] * 0.25
-```
-
-### Entendendo a fórmula
-
-O valor do frete é composto por duas partes:
-
-```text
-Custo do percurso
-+
-Custo pelo peso
-```
-
-Ou seja:
-
-```text
-Custo_KM_Veiculo × Distancia_km
-```
-
-mais:
-
-```text
-Peso_kg × 0,25
-```
-
-O resultado será o:
-
-```text
-Valor_Frete
-```
+Some as duas partes. O resultado de cada linha é o valor bruto do frete daquela entrega.
 
 ---
 
 # 13. Coluna 3 — Premium_Cliente
 
-Agora precisamos identificar se o cliente possui contrato Premium.
+Agora precisamos identificar se o cliente de cada entrega possui contrato Premium.
 
-Crie a coluna:
+### Como fazer
 
-```DAX
-Premium_Cliente =
-RELATED(Clientes[Contrato_Premium])
-```
+Na tabela `Entregas`, crie uma coluna calculada chamada `Premium_Cliente` que traga, para cada entrega, a informação de `Contrato_Premium` do cliente correspondente (tabela `Clientes`).
 
-Essa será uma **coluna auxiliar**.
-
-Ela permitirá identificar facilmente quais entregas pertencem a clientes Premium.
+Essa será uma **coluna auxiliar**: ela permitirá identificar facilmente quais entregas pertencem a clientes Premium. Assim como na Coluna 1, o dado está em outra tabela, então pense em qual função permite buscá-lo por meio do relacionamento.
 
 ---
 
 # 14. Coluna 4 — Preco_Final
 
-Clientes Premium recebem:
+Clientes Premium recebem **5% de desconto** sobre o valor do frete.
 
-```text
-5% de desconto
-```
+### Como fazer
 
-Crie a coluna:
+Na tabela `Entregas`, crie uma coluna calculada chamada `Preco_Final` com a seguinte regra de decisão, avaliada linha a linha:
 
-```DAX
-Preco_Final =
-IF(
-    Entregas[Premium_Cliente] = "Sim",
-    Entregas[Valor_Frete] * 0.95,
-    Entregas[Valor_Frete]
-)
-```
+* Se o cliente da entrega **for Premium**, o preço final é o valor do frete com o desconto de 5% aplicado (ou seja, 95% do valor do frete);
+* Caso contrário, o preço final é o próprio valor do frete, sem desconto.
 
----
+Utilize a função condicional do DAX e a coluna auxiliar criada no passo anterior para testar se o cliente é Premium.
 
-## Entendendo o IF
-
-A lógica é:
-
-```text
-Cliente é Premium?
-       │
-   ┌───┴───┐
-  SIM     NÃO
-   │        │
-5% desc.  preço cheio
-```
-
-Se o cliente for Premium:
-
-```text
-Valor_Frete × 0,95
-```
-
-Caso contrário:
-
-```text
-Valor_Frete
-```
-
-Também seria possível fazer o cálculo diretamente utilizando `RELATED`:
-
-```DAX
-Preco_Final =
-IF(
-    RELATED(Clientes[Contrato_Premium]) = "Sim",
-    Entregas[Valor_Frete] * 0.95,
-    Entregas[Valor_Frete]
-)
-```
+> **Desafio extra:** é possível chegar ao mesmo resultado sem a coluna auxiliar `Premium_Cliente`. Pense em como fazer o teste buscando o contrato do cliente diretamente dentro da condição.
 
 ---
 
@@ -519,52 +431,29 @@ Agora vamos criar as principais **medidas DAX** do projeto.
 
 Uma boa prática é centralizar as medidas em uma tabela específica.
 
-Acesse:
+### Como fazer
 
-**Modelagem → Nova Tabela**
+1. Acesse **Modelagem → Nova Tabela**.
+2. Crie uma tabela chamada `Medidas` que contenha apenas **uma linha e uma coluna**, com um valor qualquer (por exemplo, zero). Utilize uma função DAX que construa uma tabela de uma única linha.
+3. Pressione **Enter** e confirme que a tabela `Medidas` apareceu no painel de dados.
 
-Digite:
-
-```DAX
-Medidas = ROW("x", 0)
-```
-
-Pressione **Enter**.
-
-Agora teremos uma tabela chamada:
-
-```text
-Medidas
-```
-
-Para criar uma medida:
+Para criar uma medida dentro dela:
 
 **Botão direito na tabela Medidas → Nova Medida**
 
-> **Importante:** estamos criando uma **Medida**, e não uma Coluna Calculada.
+> **Importante:** estamos criando uma **Medida**, e não uma Coluna Calculada. Medidas são recalculadas conforme os filtros aplicados no relatório.
 
 ---
 
 # 16. Medida 1 — Faturamento_Total
 
-O faturamento total será a soma dos preços finais de todas as entregas.
+O faturamento total é o **somatório dos preços finais** de todas as entregas.
 
-```DAX
-Faturamento_Total =
-SUM(Entregas[Preco_Final])
-```
+### Como fazer
 
-Depois formate a medida como:
+Crie a medida `Faturamento_Total` somando a coluna `Preco_Final` da tabela `Entregas`.
 
-```text
-Moeda (R$)
-```
-
-com:
-
-```text
-2 casas decimais
-```
+Depois formate a medida como **Moeda (R$)**, com **2 casas decimais**.
 
 Essa será uma das principais medidas do Dashboard.
 
@@ -574,16 +463,11 @@ Essa será uma das principais medidas do Dashboard.
 
 O ticket médio representa o valor médio de cada entrega.
 
-```DAX
-Ticket_Medio_Entrega =
-AVERAGE(Entregas[Preco_Final])
-```
+### Como fazer
 
-Formate como:
+Crie a medida `Ticket_Medio_Entrega` calculando a **média** da coluna `Preco_Final` da tabela `Entregas`.
 
-```text
-Moeda (R$)
-```
+Formate como **Moeda (R$)**.
 
 ---
 
@@ -591,19 +475,11 @@ Moeda (R$)
 
 Primeiro vamos criar uma medida auxiliar para contar as entregas atrasadas.
 
-```DAX
-Atrasos =
-CALCULATE(
-    COUNTROWS(Entregas),
-    Entregas[Status_Entrega] = "Entregue com Atraso"
-)
-```
+### Como fazer
 
-Essa medida contará apenas as entregas com status:
+Crie a medida `Atrasos` que **conte as linhas da tabela `Entregas`**, considerando **apenas** aquelas cujo status seja `Entregue com Atraso`.
 
-```text
-Entregue com Atraso
-```
+Para isso, será necessário combinar uma função de contagem de linhas com a função que altera o contexto de filtro da medida, aplicando a condição sobre a coluna `Status_Entrega`.
 
 ---
 
@@ -611,22 +487,11 @@ Entregue com Atraso
 
 Agora vamos descobrir qual porcentagem das entregas apresentou atraso.
 
-```DAX
-%_Entregas_com_Atraso =
-[Atrasos] / COUNTROWS(Entregas)
-```
+### Como fazer
 
-Formate como:
+Crie a medida `%_Entregas_com_Atraso` dividindo a quantidade de entregas atrasadas (medida `Atrasos`) pelo **total de entregas** (contagem de linhas da tabela `Entregas`).
 
-```text
-Percentual
-```
-
-com:
-
-```text
-1 casa decimal
-```
+Formate como **Percentual**, com **1 casa decimal**.
 
 ### Exemplo
 
@@ -654,16 +519,11 @@ teremos:
 
 Vamos calcular a distância total percorrida.
 
-```DAX
-Quilometros_Rodados =
-SUM(Entregas[Distancia_km])
-```
+### Como fazer
 
-Formate como:
+Crie a medida `Quilometros_Rodados` somando a coluna `Distancia_km` da tabela `Entregas`.
 
-```text
-Número inteiro
-```
+Formate como **Número inteiro**.
 
 ---
 
@@ -671,18 +531,11 @@ Número inteiro
 
 Agora vamos calcular o custo médio por quilômetro das entregas.
 
-```DAX
-Valor_KM_Medio =
-AVERAGE(Entregas[Custo_KM_Veiculo])
-```
+### Como fazer
 
-Formate como:
+Crie a medida `Valor_KM_Medio` calculando a **média** da coluna `Custo_KM_Veiculo` da tabela `Entregas`.
 
-```text
-Moeda (R$)
-```
-
-com duas casas decimais.
+Formate como **Moeda (R$)**, com 2 casas decimais.
 
 ---
 
@@ -692,42 +545,25 @@ Agora vamos trabalhar com as metas definidas por região.
 
 ## Meta de Faturamento
 
-```DAX
-Meta_Faturamento =
-SUM(Metas_Regiao[Meta_Faturamento])
-```
+Crie a medida `Meta_Faturamento` somando a coluna `Meta_Faturamento` da tabela `Metas_Regiao`.
 
 ---
 
 ## Meta de Pontualidade
 
-```DAX
-Meta_Pontualidade =
-AVERAGE(Metas_Regiao[Meta_%_Pontualidade])
-```
+Crie a medida `Meta_Pontualidade` calculando a **média** da coluna `Meta_%_Pontualidade` da tabela `Metas_Regiao`.
 
-Formate como:
+Formate como **Percentual**.
 
-```text
-Percentual
-```
+> **Pergunta para reflexão:** por que usamos soma na meta de faturamento e média na meta de pontualidade?
 
 ---
 
 ## Percentual de Entregas no Prazo
 
-Como já temos o percentual de atrasos, podemos calcular o percentual no prazo:
+Crie a medida `%_Entregas_no_Prazo` a partir da medida `%_Entregas_com_Atraso`. Como os dois percentuais são complementares (juntos representam 100% das entregas), basta descobrir quanto falta para chegar a 100%.
 
-```DAX
-%_Entregas_no_Prazo =
-1 - [%_Entregas_com_Atraso]
-```
-
-Formate como:
-
-```text
-Percentual
-```
+Formate como **Percentual**.
 
 ---
 
@@ -735,17 +571,11 @@ Percentual
 
 Na tabela `Veiculos`, precisamos descobrir quantos veículos estão em manutenção.
 
-Crie a medida:
+### Como fazer
 
-```DAX
-Veiculos_em_Manutencao =
-COUNTROWS(
-    FILTER(
-        Veiculos,
-        Veiculos[Em_Manutencao] = "Sim"
-    )
-)
-```
+Crie a medida `Veiculos_em_Manutencao` que **conte as linhas da tabela `Veiculos`** em que a coluna `Em_Manutencao` seja igual a `Sim`.
+
+Existem mais de uma forma de fazer isso em DAX: você pode filtrar a tabela antes de contar as linhas, ou alterar o contexto de filtro da contagem. Escolha a que preferir.
 
 O resultado esperado é:
 
@@ -985,11 +815,6 @@ Crie uma tabela contendo:
 | Preco_Final    |
 | Status_Entrega |
 
-Na coluna:
-
-```text
-Preco_Final
-```
 ---
 
 # 32. Página 4 — Frota e Veículos
@@ -1156,7 +981,6 @@ Antes de entregar o projeto, confira se todas as etapas foram realizadas.
 * [ ] Indicadores com metas
 * [ ] Gráficos
 * [ ] Tabela detalhada
-* [ ] Formatação condicional
 * [ ] Segmentações de dados
 * [ ] Botões de navegação
 
