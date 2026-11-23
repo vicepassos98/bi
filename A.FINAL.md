@@ -1,4 +1,4 @@
-# LOGÍSTICA EXPRESS - Trabalho Final de Power BI
+# VICE CITY EXPRESS - Trabalho Final de Power BI
 
 **Projeto:** Análise de Entregas, Clientes, Veículos e Metas por Região
 
@@ -8,7 +8,7 @@
 
 Neste trabalho final, vamos construir um **Dashboard de Logística** utilizando o Power BI.
 
-A empresa fictícia **Logística Express** deseja analisar:
+A empresa fictícia **VICE CITY Express** deseja analisar:
 
 * Entregas realizadas;
 * Clientes e contratos;
@@ -57,7 +57,7 @@ O projeto utiliza três tabelas que estão no arquivo Excel e uma quarta tabela 
 3. Selecione o arquivo:
 
 ```text
-BD_LogisticaExpress.xlsx
+BD_VCExpress.xlsx
 ```
 
 4. Na janela de navegação, selecione:
@@ -616,7 +616,7 @@ Crie uma página inicial para o projeto.
 Inclua:
 
 ```text
-LOGÍSTICA EXPRESS
+VICE CITY EXPRESS
 
 Dashboard de Logística
 
@@ -992,7 +992,7 @@ Antes de entregar o projeto, confira se todas as etapas foram realizadas.
 
 O projeto final deverá apresentar:
 
-> **Um Dashboard interativo capaz de transformar os dados da Logística Express em informações úteis para tomada de decisão.**
+> **Um Dashboard interativo capaz de transformar os dados da Vice City Express em informações úteis para tomada de decisão.**
 
 O objetivo não é apenas criar gráficos.
 
